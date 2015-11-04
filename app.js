@@ -102,7 +102,6 @@ passport.use(new GoogleStrategy({
   }
 ));
 
-
 // Routes \\
 // var authenticationController = require('./controllers/authentication');
 

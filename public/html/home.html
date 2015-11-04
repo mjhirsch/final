@@ -12,11 +12,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-route.js" type="text/javascript"></script>
 </head>
 <body ng-controller='mainController'>
-  <div class="pageContainer wrapper" ng-class="displayNone ? 'sidehide' : 'sideshow'"> 
+  <div class="pageContainer wrapper container-fluid" ng-class="displayNone ? 'sidehide' : 'sideshow'"> 
     <div class="topBar"><i ng-click='clickShowSideNav()' class="fa fa-bars"> Dear Landlord</i>
 
-    <div class='rightJust'>
-
+    <div class='rightJust' class="col-md-12">
       <div class="btn-group">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Action <span class="caret"></span>
@@ -29,12 +28,11 @@
           <li><a href="/logout">Logout</a></li>
         </ul>
       </div>
-
     </div>
 
     </div>
     <div id="sidebar-wrapper" ng-hide='hideSideNav' >
-      <ul class="sidebar-nav">
+      <ul class="sidebar-nav col-md-1">
         <li class="sidebar-brand">Sidebar</li>
         <li ng-click='linkAddReview()'>Add a Review</li>
         <li ng-click="linkLandlordsList()">List Landlords</li>

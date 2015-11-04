@@ -218,9 +218,7 @@ angular.module('App')
 					$scope.neighborList = returnData.data;
 					console.log($scope.neighborList)
 				})
-
 		}
-
 
 	}])
 		

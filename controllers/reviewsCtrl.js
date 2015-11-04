@@ -97,7 +97,6 @@ var findRentals = function(req, res){
 	}
 }
 
-
 var findRentalReviews = function(req, res){
 	console.log('reck that param', req.params.specificRentalID)
 	Review.find({rental : req.params.specificRentalID}, function(err, docs){

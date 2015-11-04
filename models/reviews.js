@@ -30,7 +30,6 @@ var reviewSchema = mongoose.Schema({
   }
 });
 
-
 // Our user model
 var Review = mongoose.model('review', reviewSchema);
 

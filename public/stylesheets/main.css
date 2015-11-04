@@ -13,7 +13,7 @@
 }
 
 .rightJust{
-	float: right;
+	/*float: right;*/
 	font-size: 10pt;
 }
 
@@ -137,7 +137,7 @@ ul{
     background: none;
 }
 
-@media(min-width:768px) {
+@media(min-width:250px) {
     .wrapper {
         padding-left: 0px;
     }

@@ -19,7 +19,6 @@ var findUsers = function(req, res){
 	};
 
 
-
 module.exports = {
 	findUsers : findUsers
 }

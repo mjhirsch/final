@@ -7,7 +7,6 @@ var findRentals = function(req, res){
 			})
 }
 
-
 module.exports = {
 	findRentals : findRentals
  }

@@ -31,6 +31,5 @@ var rentalSchema = mongoose.Schema({
 
 // Our user model
 var Rental = mongoose.model('rental', rentalSchema);
-
 // Make user model available through exports/require
 module.exports = Rental;
