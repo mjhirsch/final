@@ -1,0 +1,274 @@
+.topBar{
+	font-size: 15pt;
+	width: 100%;
+	/*height: 50px;*/
+	background-color: red;
+}
+
+.sideBar{
+	width: 70px;
+	height: 100%;
+	background-color: blue;
+	color: white;
+}
+
+.rightJust{
+	float: right;
+	font-size: 10pt;
+}
+
+.centerInput{
+	text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.listedReview{
+	background-color: orange;
+	margin: 5pt;
+	text-align: center;
+	border-radius: 2pt;
+	width: 375px;
+}
+
+.dropdown-menu{
+	min-width: 100px;
+}
+
+.pageContainer{
+	padding-left: 0;
+}
+
+
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=sidebar-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+
+.wrapper {
+    padding-left: 0px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+	top: 0; 
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: blue;
+    color: white;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+.page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+.wrapper.toggled .page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+@media(min-width:768px) {
+    .wrapper {
+        padding-left: 0px;
+    }
+
+    .wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 250px;
+    }
+
+    .wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    .page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    .wrapper.toggled .page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+
+/*.pageContainer{
+	padding-left: 0;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}*/
+
+/*-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-NG RATING -=-=-=-=-=-=-=-=-=-=-=-*/
+
+/**
+ * Base
+ */
+/* line 6, ../sass/ng-rating.scss */
+.ng-rating {
+  position: relative;
+  display: inline-block;
+  font-size: 25px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* line 18, ../sass/ng-rating.scss */
+.ng-rating--editable .ng-rating-group {
+  cursor: pointer; }
+
+/**
+ * Grade
+ */
+/* line 26, ../sass/ng-rating.scss */
+.ng-rating-grade {
+  color: #999;
+  position: absolute;
+  right: -5px;
+  top: 8px;
+  font-size: 14px;
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%); }
+
+/**
+ * Stars
+ */
+/**
+ * Colors
+ */
+/* line 44, ../sass/ng-rating.scss */
+.ng-rating--xlow .ng-rating-group--hover {
+  color: #e11e21; }
+
+/* line 49, ../sass/ng-rating.scss */
+.ng-rating--low .ng-rating-group--hover {
+  color: #ff5d10; }
+
+/* line 54, ../sass/ng-rating.scss */
+.ng-rating--medium .ng-rating-group--hover {
+  color: #e8800e; }
+
+/* line 59, ../sass/ng-rating.scss */
+.ng-rating--high .ng-rating-group--hover {
+  color: #f9b836; }
+
+/* line 64, ../sass/ng-rating.scss */
+.ng-rating--xhigh .ng-rating-group--hover {
+  color: #fdd119; }
+
+/**
+ * Groups
+ */
+/* line 72, ../sass/ng-rating.scss */
+.ng-rating-group,
+.ng-rating-group--hover {
+  color: #EEE;
+  display: inline-block; }
+  /* line 77, ../sass/ng-rating.scss */
+  .ng-rating-group > span,
+  .ng-rating-group--hover > span {
+    margin-right: 2px;
+    display: inline-block; }
+
+/* line 82, ../sass/ng-rating.scss */
+.ng-rating-group--hover {
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out; }
+
+  /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+.sidehide{
+	padding-left: 250px;
+}
+/*
+.sideshow{
+	padding-left: 0px;
+}
+*/

@@ -1,0 +1,9 @@
+<h3>Rental</h3>
+<h4>Owned/Operated by {{specificRental.lLName}}</h4><br>
+<h4>at {{specificRental.address}}</h4>
+
+<ul>
+	<li ng-repeat="rentalReview in rentalReviews | orderBy: '-rating'" class="listedReview">
+		{{rentalReview.lLComments}}<br>{{rentalReview.neighborhoodComments}}<br><ng-rating ng-model="rentalReview.rating" editable='false'></ng-rating>
+	</li>
+</ul>

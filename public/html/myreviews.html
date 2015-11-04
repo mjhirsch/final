@@ -1,0 +1,24 @@
+<h1>My Reviews</h1>
+<div>
+	<ul>
+		<li ng-repeat="review in myReviews" class="listedReview">
+			{{review.lLName}}<br>{{review.lLComments}}<br>{{review.neighborhoodComments}}<br>
+			<ng-rating ng-model="review.rating" editable='false'></ng-rating> 
+			<button ng-click="editReview(review)">edit</button>
+		</li>
+	</ul>
+</div>
+
+<div ng-hide="hideEdit">
+
+	<form class="centerInput">
+		<input ng-model="updateReview.lLName" placeholder="Landlord's First Name / Management Company" required><br>
+		<input ng-model="updateReview.address" placeholder="Address" required><br>
+		<textarea ng-model="updateReview.lLComments" placeholder="Truthful comments about your experience with the landlord" required></textarea><br>
+		<textarea ng-model="updateReview.neighborhoodComments" placeholder="Any comments or tips about the neighborhood"></textarea><br>
+		<ng-rating ng-model="updateReview.rating" editable='true' required></ng-rating>
+
+		<input type="submit" ng-click="editReviewSubmit()">
+	</form>
+	
+</div>

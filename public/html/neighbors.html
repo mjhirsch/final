@@ -1,0 +1,10 @@
+<h3>Neighborhood Search</h3>
+
+<input placeholder='ZIP 10001' ng-model='zipSearch'>
+<button ng-click='clickSearchZip()'>Search</button> 
+
+<ul>
+	<li ng-repeat="hoodList in neighborList | orderBy: '-hoodRating'" class="listedReview">
+		{{hoodList.neighborhoodComments}}<br><ng-rating ng-model="hoodList.hoodRating" editable='false'></ng-rating>
+	</li>
+</ul>
