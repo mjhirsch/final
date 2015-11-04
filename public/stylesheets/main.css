@@ -1,6 +1,10 @@
 body{
 	color: white;
 }
+
+input{
+	color:gray;
+}
 .topBar{
 	font-size: 15pt;
 	width: 100%;

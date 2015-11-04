@@ -64,7 +64,7 @@ passport.deserializeUser(function(id, done){
 passport.use(new GoogleStrategy({
     clientID: '34694863364-armuht6k15n6i34uki4hs0ftdftapd8o.apps.googleusercontent.com',
     clientSecret: '-KQcWTNQAUwF5o9tOjqx7vWx',
-    callbackURL: "http://localhost:3000/auth/google/callback"
+    callbackURL: "http://104.236.61.63/auth/google/callback"
   },
   function(accessToken, refreshToken, profile, done) {
     // console.log(profile)
@@ -155,7 +155,7 @@ app.post('/api/reviews/:_id', reviewsCtrl.updateReview)
 
 
 // Creating Server and Listening for Connections \\
-var port = 3000
+var port = 80
 app.listen(port, function(){
   console.log('Server running on port ' + port);
 
