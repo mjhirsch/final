@@ -31,7 +31,7 @@
     </div>
 
     </div>
-    <div id="sidebar-wrapper" ng-hide='hideSideNav' >
+    <div id="sidebar-wrapper" ng-class="sideHideValue ? 'transto' : 'transfrom'">
       <ul class="sidebar-nav col-md-1">
         <li class="sidebar-brand">Sidebar</li>
         <li ng-click='linkAddReview()'>Add a Review</li>

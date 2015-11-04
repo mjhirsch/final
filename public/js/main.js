@@ -73,11 +73,13 @@ angular.module('App')
 		$scope.clickShowSideNav = function(){
 			if ($scope.hideSideNav) {
 				$scope.hideSideNav = false
+				$scope.sideHideValue = true
 				$scope.displayNone = true
 
 			} else{
 				$scope.hideSideNav = true
 				$scope.displayNone = false
+				$scope.sideHideValue = false
 			};
 
 		}

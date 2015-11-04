@@ -2,7 +2,8 @@
 	font-size: 15pt;
 	width: 100%;
 	/*height: 50px;*/
-	background-color: red;
+	background-color: blue;
+	color: white;
 }
 
 .sideBar{
@@ -62,7 +63,6 @@ ul{
     z-index: 1000;
     position: fixed;
     left: 250px;
-    width: 0;
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
@@ -146,9 +146,9 @@ ul{
         padding-left: 0;
     }
 
-    #sidebar-wrapper {
-        width: 250px;
-    }
+/*    #sidebar-wrapper {
+        width: 0px;
+    }*/
 
     .wrapper.toggled #sidebar-wrapper {
         width: 0;
@@ -266,6 +266,14 @@ ul{
 
 .sidehide{
 	padding-left: 250px;
+}
+
+.transto{
+	width: 250px;
+}
+
+.transfrom{
+	width: 0
 }
 /*
 .sideshow{
