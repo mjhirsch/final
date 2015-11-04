@@ -1,20 +1,24 @@
+body{
+	color: white;
+}
 .topBar{
 	font-size: 15pt;
 	width: 100%;
-	/*height: 50px;*/
-	background-color: blue;
+	height: 40px;
+	background-color: #538DE8;
 	color: white;
+	font-size: 15pt;
 }
 
 .sideBar{
 	width: 70px;
 	height: 100%;
-	background-color: blue;
+	background-color: #538DE8;
 	color: white;
 }
 
 .rightJust{
-	/*float: right;*/
+	float: right;
 	font-size: 10pt;
 }
 
@@ -27,15 +31,16 @@ ul{
 }
 
 .listedReview{
-	background-color: orange;
+	background-color: #75BAFF;
 	margin: 5pt;
 	text-align: center;
-	border-radius: 2pt;
+	border-radius: 4pt;
 	width: 375px;
 }
 
 .dropdown-menu{
 	min-width: 100px;
+	background-color: #538DE8;
 }
 
 .pageContainer{
@@ -66,7 +71,7 @@ ul{
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: blue;
+    background: #538DE8;
     color: white;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -79,6 +84,8 @@ ul{
 }
 
 .page-content-wrapper {
+	background-image: url('../condo.jpg');
+	height: 100vh;
     width: 100%;
     position: absolute;
     padding: 15px;
@@ -113,7 +120,7 @@ ul{
 
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: #fff;
+    color: #687EF5;
     background: rgba(255,255,255,0.2);
 }
 
@@ -133,7 +140,7 @@ ul{
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
+    color: #687EF5;
     background: none;
 }
 
