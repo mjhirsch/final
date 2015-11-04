@@ -64,7 +64,7 @@ passport.deserializeUser(function(id, done){
 passport.use(new GoogleStrategy({
     clientID: '34694863364-armuht6k15n6i34uki4hs0ftdftapd8o.apps.googleusercontent.com',
     clientSecret: '-KQcWTNQAUwF5o9tOjqx7vWx',
-    callbackURL: "http://104.236.61.63/auth/google/callback"
+    callbackURL: "http://mikehirs.ch/auth/google/callback"
   },
   function(accessToken, refreshToken, profile, done) {
     // console.log(profile)
