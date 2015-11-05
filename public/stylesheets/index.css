@@ -1,5 +1,6 @@
 body{
 	background-image: url('../skyscraper.jpg');
+	background-size: 100%;
 	color: white;
 }
 

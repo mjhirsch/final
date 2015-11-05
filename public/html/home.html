@@ -2,6 +2,7 @@
 <html ng-app="App">
 <head>
   <title>Dear Landlord or Landlordly or something else IDK honestly</title>
+  <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -13,35 +14,39 @@
 </head>
 <body ng-controller='mainController'>
   <div class="pageContainer wrapper container-fluid" ng-class="displayNone ? 'sidehide' : 'sideshow'"> 
-    <div class="topBar"><i ng-click='clickShowSideNav()' class="fa fa-bars"> Dear Landlord</i>
+    <div class="topBar" ng-class="sideHideValue ? 'transfromtop' : 'transtotop'">
+      <i ng-click='clickShowSideNav()' class="fa fa-bars topbarhamburger"></i><span><img src="../logo1.png" class="logotopbar"> LandLordLy</span>
 
-    <div class='rightJust' class="col-md-12">
-      <div class="btn-group">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Action <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu">
-          <li ng-click="profileClick()">My Profile</li>
-          <li role="separator" class="divider"></li>
-          <li ng-click="myReviewsClick()">My Reviews</li>
-          <li role="separator" class="divider"></li>
-          <li><a href="/logout">Logout</a></li>
-        </ul>
+      <div class='rightJust' class="col-md-12">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle dropdownbutton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{userInfo.email}} <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li ng-click="profileClick()">My Profile</li>
+            <li ng-click="myReviewsClick()">My Reviews</li>
+            <li role="separator" class="divider"></li>
+            <li><a href="/logout">Logout</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
 
     </div>
     <div id="sidebar-wrapper" ng-class="sideHideValue ? 'transto' : 'transfrom'">
       <ul class="sidebar-nav col-md-1">
-        <li class="sidebar-brand">Sidebar</li>
+        <span class='sidebarhamburger'><i ng-click='clickShowSideNav()' class="fa fa-bars"></i></span>
+        <li class="sidebar-brand"><img src="../logo2.png"> LandLordLy</li>
         <li ng-click='linkAddReview()'>Add a Review</li>
         <li ng-click="linkLandlordsList()">List Landlords</li>
         <li ng-click="neighborhoodList()">Search Neighborhoods</li>
+        <li> </li>
+        <li ng-click="profileClick()">My Profile</li>
+        <li ng-click="myReviewsClick()">My Reviews</li>
         <li><a href="/logout">Logout</a></li>
       </ul>
     </div>
 
-    <div ng-view class="page-content-wrapper">
+    <div ng-view class="page-content-wrapper" ng-class="!sideHideValue ? 'transfromtoppagewrapper' : 'transtotoppagewrapper'">
     </div>
 
   </div> 

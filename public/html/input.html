@@ -1,19 +1,24 @@
-<h3>Leave a review of a landlord or property management company:</h3>
 
-<div>
+
+<div class='inputFormContainer'>
+
+	<h3 class="centerTitle">Leave a review of a landlord or property management company.</h3>
 	<form class="centerInput">
-		<input ng-model="review.lLName" placeholder="Landlord's First Name / Management Company" required><br>
-		<input ng-model="review.street" placeholder="Street Name and Number" required><br>
-		<input ng-model="review.city" placeholder="City" required><br>
-		<input maxlength="2" ng-model="review.state" placeholder="State Initials" required><br>
-		<input ng-model="review.zip" placeholder="Zip Code" required><br>
-		<textarea ng-model="review.lLComments" placeholder="Truthful comments about your experience with the landlord" required></textarea><br>
-		<textarea ng-model="review.neighborhoodComments" placeholder="Any comments or tips about the neighborhood"></textarea><br>
-		Overall Landlord Rating
-		<ng-rating ng-model="review.rating" editable='true' required></ng-rating><br>
-		hood Rating
-		<ng-rating ng-model="review.hoodRating" editable='true' required></ng-rating>
+		<input class="wideInput inputinput" ng-model="review.lLName" placeholder="Landlord's First Name / Management Company" required><br>
+		<input class="wideInput inputinput" ng-model="review.street" placeholder="Street Name and Number" required><br>
+		<input class="wideInput inputinput" ng-model="review.city" placeholder="City" required><br>
+		<input class="narrowInput inputinput" maxlength="2" ng-model="review.state" placeholder="State Initials" required>
+		<input class='narrowInput inputinput' ng-model="review.zip" placeholder="Zip Code" required><br>
+		<textarea class='areaInput inputinput' ng-model="review.lLComments" placeholder="Truthful comments about your experience with the landlord" required></textarea><br>
+		<textarea class='areaInput inputinput' ng-model="review.neighborhoodComments" placeholder="Any comments or tips about the neighborhood"></textarea><br>
 
-		<input type="submit" ng-click="createReview()">
+		<div class="submitDiv">
+			Overall Landlord Rating<br>
+			<ng-rating ng-model="review.rating" editable='true' required></ng-rating><br>
+			Neighborhood Rating<br>
+			<ng-rating ng-model="review.hoodRating" editable='true' required></ng-rating><br>
+			<input type="submit" ng-click="createReview()">
+		</div>
+		
 	</form>
 </div>

@@ -5,19 +5,31 @@ body{
 input{
 	color:gray;
 }
+
 .topBar{
-	font-size: 15pt;
+	font-size: 20pt;
 	width: 100%;
 	height: 40px;
-	background-color: #538DE8;
+	/*background-color: #538DE8;*/
 	color: white;
-	font-size: 15pt;
+	padding: 5px;
+  /*  background: -webkit-linear-gradient(left, #2C52F5, #3A6CFF, #0075F5, #538DE8, #75B0FF);
+    background: -o-linear-gradient(left, #2C52F5, #3A6CFF, #0075F5, #538DE8, #75B0FF); 
+    background: -moz-linear-gradient(left, #2C52F5, #3A6CFF, #0075F5, #538DE8, #75B0FF);
+    background: linear-gradient(left, #2C52F5, #3A6CFF, #0075F5, #538DE8, #75B0FF);*/
+    background: -webkit-linear-gradient(left, #0072FF, #0072FF, #538DE8, #75B0FF);
+    background: -o-linear-gradient(left, #0072FF, #0072FF, #538DE8, #75B0FF); 
+    background: -moz-linear-gradient(left, #0072FF, #0072FF, #538DE8, #75B0FF);
+    background: linear-gradient(left, #0072FF, #0072FF, #538DE8, #75B0FF);
 }
 
 .sideBar{
 	width: 70px;
 	height: 100%;
-	background-color: #538DE8;
+	background: -webkit-linear-gradient(red 10%, #538DE8 85%, blue 90%);
+	background: -o-linear-gradient(red 10%, #538DE8 85%, blue 90%); 
+	background: -moz-linear-gradient(red 10%, #538DE8 85%, blue 90%);
+	background: linear-gradient(red 10%, #538DE8 85%, blue 90%);
 	color: white;
 }
 
@@ -26,8 +38,46 @@ input{
 	font-size: 10pt;
 }
 
+.inputFormContainer{
+	background: rgba(0, 0, 0, 0.38);
+	border-radius: 15px;
+	padding: 15px;
+}
+
 .centerInput{
 	text-align: center;
+}
+
+.centerTitle{
+	text-align: center;
+}
+
+.wideInput{
+	margin: 8px;
+	width: 50%;
+}
+
+.narrowInput{
+	margin-top: 8px;
+	margin-bottom: 8px;
+	width: 25%;
+}	
+
+.inputinput{
+	border-radius: 2px;
+	border: none;
+	padding: 5px;
+}
+
+.areaInput{
+	width: 50%;
+	height: 60px;
+	margin: 2pt;
+	color: grey;
+}
+
+.submitDiv{
+	font-size: 15pt;
 }
 
 ul{
@@ -42,9 +92,14 @@ ul{
 	width: 375px;
 }
 
+.dropdownbutton{
+	background-color: #75B0FF;
+}
 .dropdown-menu{
-	min-width: 100px;
+	padding: 10px;
+	min-width: 183px;
 	background-color: #538DE8;
+	text-align: center;
 }
 
 .pageContainer{
@@ -75,7 +130,14 @@ ul{
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #538DE8;
+    background: -webkit-linear-gradient(#0072FF, #0072FF, #538DE8, #75B0FF);
+    background: -o-linear-gradient(#0072FF, #0072FF, #538DE8, #75B0FF); 
+    background: -moz-linear-gradient(#0072FF, #0072FF, #538DE8, #75B0FF);
+    background: linear-gradient(#0072FF, #0072FF, #538DE8, #75B0FF);
+    /*background: -webkit-linear-gradient(left, #2C52F5, #3A6CFF, #0075F5, #538DE8, #75B0FF);
+    background: -o-linear-gradient(left, #2C52F5, #3A6CFF, #0075F5, #538DE8, #75B0FF); 
+    background: -moz-linear-gradient(left, #2C52F5, #3A6CFF, #0075F5, #538DE8, #75B0FF);
+    background: linear-gradient(left, #2C52F5, #3A6CFF, #0075F5, #538DE8, #75B0FF);*/
     color: white;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -89,6 +151,7 @@ ul{
 
 .page-content-wrapper {
 	background-image: url('../condo.jpg');
+	background-size: cover;
 	height: 100vh;
     width: 100%;
     position: absolute;
@@ -286,6 +349,52 @@ ul{
 .transfrom{
 	width: 0
 }
+.transtotop{
+	width: 100%;
+	text-align: center;
+/*	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;*/
+}
+
+.transfromtop{
+	width: 0;
+/*	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;*/
+}
+
+.transtotoppagewrapper{
+	top: -40px;
+/*	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;*/
+}
+
+.transfromtoppagewrapper{
+	top: 0px;
+/*	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;*/
+}
+
+.sidebarhamburger{
+	float: right;
+	font-size: 20pt;
+	padding: 5px;
+}
+.topbarhamburger{
+	float: left;
+}
+
+.logotopbar{
+	padding-bottom: 13px
+}
+
 /*
 .sideshow{
 	padding-left: 0px;
