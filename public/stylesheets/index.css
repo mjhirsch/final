@@ -2,21 +2,33 @@ body{
 	background-image: url('../skyscraper.jpg');
 	background-size: 100%;
 	color: white;
+	text-shadow: -1px 1px black;
 }
 
-.box{
-	background-color: gray;
-	width: 50%;
-	border-radius: 4pt;
-	text-align: center;
-	color: white;
-	margin-top: 225px;
-	margin-left: auto;
-	margin-right: auto;
-	opacity: 0.9;
-
+.box {
+    background-color: rgba(186, 186, 186, 0.7);
+    width: 60%;
+    border-radius: 4pt;
+    font-size: x-large;
+    padding: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 225px;
+    margin-left: auto;
+    margin-right: auto;
+    /* opacity: 0.9; */
 }
 
 body i{
 	font-style: 15pt;
+}
+
+.centertitle{
+	text-align: center;
+}
+
+.frontpage{
+    color: white;
+    padding-top: 20px;
+    border-top: solid;
 }

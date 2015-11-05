@@ -1,10 +1,11 @@
-<h1>My Reviews</h1>
+<h1 class="centertitle">My Reviews</h1>
+
 <div>
 	<ul>
 		<li ng-repeat="review in myReviews" class="listedReview">
 			{{review.lLName}}<br>{{review.lLComments}}<br>{{review.neighborhoodComments}}<br>
 			<ng-rating ng-model="review.rating" editable='false'></ng-rating> 
-			<button ng-click="editReview(review)">edit</button>
+			<button ng-click="editReview(review)" class="btn btn-default">edit</button>
 		</li>
 	</ul>
 </div>
