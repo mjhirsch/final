@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 var userCtrl = require('./controllers/userCtrl.js')
 var reviewsCtrl = require('./controllers/reviewsCtrl.js')
 var rentalCtrl = require('./controllers/rentalCtrl.js')
-
+var apikeys = require('./apikeys.json')
 // Session Setup
 app.use(session({
   secret: 'secret',
@@ -62,9 +62,9 @@ passport.deserializeUser(function(id, done){
 });
 
 passport.use(new GoogleStrategy({
-    clientID: '34694863364-armuht6k15n6i34uki4hs0ftdftapd8o.apps.googleusercontent.com',
-    clientSecret: '-KQcWTNQAUwF5o9tOjqx7vWx',
-    callbackURL: "http://mikehirs.ch/auth/google/callback"
+    clientID: apikeys.clientID,
+    clientSecret: apikeys.clientSecret,
+    callbackURL: apikeys.callbackURL
   },
   function(accessToken, refreshToken, profile, done) {
     // console.log(profile)
