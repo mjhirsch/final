@@ -1,7 +1,7 @@
 <div class="centertitle">
 	<h1>Rental</h1>
 	<h4>Owned/Operated by {{specificRental.lLName}}</h4><br>
-	<h4>at {{specificRental.address}}</h4>
+	<h4>at {{landlord.street}}<br>{{landlord.city}} {{landlord.state}}, {{landlord.zip}</h4>
 </div>
 <ul>
 	<li ng-repeat="rentalReview in rentalReviews | orderBy: '-rating'" class="listedReview">
